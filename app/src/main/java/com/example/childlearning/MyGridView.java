@@ -28,6 +28,7 @@ public class MyGridView extends AppCompatActivity implements AdapterView.OnItemC
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
         Intent intent = new Intent(this,PopUp.class);
+        intent.putExtra("AnimationImages",images[i]);
         startActivity(intent);
     }
 }
